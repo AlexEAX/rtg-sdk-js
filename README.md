@@ -3,19 +3,19 @@ Implementare plugin Retargeting
 
 ## Installare
 Pasul 1
-```
+```js
 <script src="https://yourdomain.tld/rtg-sdk.js"></script>
 ```
 
 Pasul 2
-```
+```js
 <script async>
 RTG('APIKEY','Retargeting Key');
 </script>
 ```
 
 Pasul 3
-```
+```js
 <script>
 RTG('clickImage','.zoomImg'); // Image Selector
 RTG('addToCart','.ajax_add_to_cart'); // addToCart Selector
@@ -26,7 +26,7 @@ RTG('quantity','.qty'); // quantity Selector
 ```
 
 Pasul 4
-```
+```js
 <script>
 RTG('CategoryInfo',{
     "id": 20,
@@ -38,7 +38,7 @@ RTG('CategoryInfo',{
 </script>
 ```
 OR
-```
+```js
 <script>
 RTG('CategoryInfo',{
     "id": 21,
@@ -53,7 +53,7 @@ RTG('CategoryInfo',{
 </script>
 ```
 Date Produs
-```
+```js
 <script>
 RTG('ProductInfo',{
     "id": product_id,
@@ -97,7 +97,7 @@ RTG('ProductInfo',{
 </script>
 ```
 OR
-```
+```js
 <script>
 RTG('ProductInfo',[{
     "id": product_id,
@@ -179,7 +179,7 @@ RTG('ProductInfo',[{
 </script>
 ```
 OR
-```
+```js
 <script>
 /* Produs 1 */
 RTG('ProductInfo',{
@@ -264,13 +264,13 @@ RTG('ProductInfo',{
 </script>
 ```
 SendProduct OnLoad
-```
+```js
 <script>
 RTG('sendProduct',product_id);
 </script>
 ```
 saveOrder OnLoad
-```
+```js
 <script>
 RTG('OrderInfo',{
     "order_no": "unique_order_number",
