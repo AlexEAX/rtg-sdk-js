@@ -10,28 +10,29 @@ Pasul 1
 Pasul 2
 ```js
 <script async>
-RTG('APIKEY','Retargeting Key');
+RTG("APIKEY","Retargeting Key");
 </script>
 ```
 
 Pasul 3
 ```js
 <script>
-RTG('clickImage','.zoomImg'); // Image Selector
-RTG('addToCart','.ajax_add_to_cart'); // addToCart Selector
-RTG('addToCart','.single_add_to_cart_button'); // addToCart Selector 2 
-RTG('removeFromCart','.remove'); // removeFromCart Selector
-RTG('quantity','.qty'); // quantity Selector
+RTG("clickImage",".zoomImg"); // Image Selector
+RTG("addToCart",".ajax_add_to_cart"); // addToCart Selector
+RTG("addToCart",".single_add_to_cart_button"); // addToCart Selector 2 
+RTG("removeFromCart",".remove"); // removeFromCart Selector
+RTG("quantity",".qty"); // quantity Selector
 </script>
 ```
 
 Pasul 4
 ```js
 <script>
-RTG('CategoryInfo',{
+
+RTG("CategoryInfo",{
     "id": 20,
     "name": "Shoes",
-    "url": 'https://www.domain.com/men/shoes/sport-shoes',
+    "url": "https://www.domain.com/men/shoes/sport-shoes",
     "parent": false,
     "breadcrumb": [] 
 });
@@ -40,10 +41,10 @@ RTG('CategoryInfo',{
 OR
 ```js
 <script>
-RTG('CategoryInfo',{
+RTG("CategoryInfo",{
     "id": 21,
     "name": "Sneakers",
-    "url": 'https://www.domain.com/men/shoes/sport-shoes',
+    "url": "https://www.domain.com/men/shoes/sport-shoes",
     "parent": 20,
     "breadcrumb": [
         {"id": 21, "name": "Sneakers", "parent": 20},
@@ -55,7 +56,7 @@ RTG('CategoryInfo',{
 Date Produs
 ```js
 <script>
-RTG('ProductInfo',{
+RTG("ProductInfo",{
     "id": product_id,
     "name": "product_name",
     "url": "product_url",
@@ -99,7 +100,7 @@ RTG('ProductInfo',{
 OR
 ```js
 <script>
-RTG('ProductInfo',[{
+RTG("ProductInfo",[{
     "id": product_id,
     "name": "product_name",
     "url": "product_url",
@@ -182,7 +183,7 @@ OR
 ```js
 <script>
 /* Produs 1 */
-RTG('ProductInfo',{
+RTG("ProductInfo",{
     "id": product_id,
     "name": "product_name",
     "url": "product_url",
@@ -222,7 +223,7 @@ RTG('ProductInfo',{
     }
 });
 /* Produs 2 */
-RTG('ProductInfo',{
+RTG("ProductInfo",{
     "id": product_id2,
     "name": "product_name2",
     "url": "product_url",
@@ -266,13 +267,13 @@ RTG('ProductInfo',{
 SendProduct OnLoad
 ```js
 <script>
-RTG('sendProduct',product_id);
+RTG("sendProduct",product_id);
 </script>
 ```
 saveOrder OnLoad
 ```js
 <script>
-RTG('OrderInfo',{
+RTG("OrderInfo",{
     "order_no": "unique_order_number",
     "lastname": "buyer_last_name",
     "firstname": "buyer_first_name",
@@ -288,7 +289,7 @@ RTG('OrderInfo',{
     "fees": fees_value_besides_shipping,
     "total": total_order_value
 });
-RTG('OrderProducts',[
+RTG("OrderProducts",[
     {
         "id": product_id,
         "quantity": product_quantity,

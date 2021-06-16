@@ -926,4 +926,8 @@ var RTG = (function () {
     _rtg.c.info( _rtg.Message.plugIn.replace('{version}',_rtg.version) );
 
     return _rtg.p;
+<<<<<<< HEAD
 })();
+=======
+})();
+>>>>>>> v10
