@@ -1,5 +1,5 @@
 /**
- * 2014-2021 Retargeting BIZ SRL
+ * 2014-2020 Retargeting BIZ SRL
  *
  * NOTICE OF LICENSE
  *
@@ -17,11 +17,10 @@
  * versions in the future. If you wish to customize PrestaShop for your
  * needs please refer to http://www.prestashop.com for more information.
  *
- * @author    Alexandru Buzica - Retargeting SRL <alexandru.buzica@retargeting.biz>
- * @copyright 2014-2021 Retargeting SRL
+ * @author    Retargeting SRL <info@retargeting.biz>
+ * @copyright 2014-2020 Retargeting SRL
  * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
-
 var RTG = (function () {
     var _rtg = {
         /* Todo: $_GET */
@@ -926,8 +925,4 @@ var RTG = (function () {
     _rtg.c.info( _rtg.Message.plugIn.replace('{version}',_rtg.version) );
 
     return _rtg.p;
-<<<<<<< HEAD
 })();
-=======
-})();
->>>>>>> v10
